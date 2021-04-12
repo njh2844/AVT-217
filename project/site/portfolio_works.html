@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Nicholas Huh's Portfolio</title>
+<title>Nicholas Huh's Works</title>
+	<link rel="stylesheet" href="css/works.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 <style>
 body {
   font-family: Noto Sans KR;
@@ -11,7 +13,10 @@ body {
   background: url("pagebackground.png") no-repeat center 0px fixed;
 }
 .button1 {
-  border: rgba(252,255,168,1.00);
+  font-family: Noto Sans KR;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #FAFFAE;
   color: mediumspringgreen;
   padding: 15px 32px;
   text-align: center;
@@ -21,10 +26,13 @@ body {
   margin: 0px 2px;
   cursor: pointer;
   position: absolute;
-  right: 170px;
+  right: 670px;
 }
 .button2 {
-  border: rgba(252,255,168,1.00);
+  font-family: Noto Sans KR;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #FAFFAE;
   color: mediumspringgreen;
   padding: 15px 32px;
   text-align: center;
@@ -34,10 +42,13 @@ body {
   margin: 0px 2px;
   cursor: pointer;
   position: absolute;
-  right: 20px;
+  right: 510px;
 }
 .button3 {
-  border: rgba(252,255,168,1.00);
+  font-family: Noto Sans KR;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #FAFFAE;
   color: white;
   padding: 15px 30px;
   text-align: center;
@@ -47,12 +58,28 @@ body {
   margin: 0px 2px;
   cursor: pointer;
   position: relative;
-  right: 0px;
+  right: -480px;
 }
-	
-.button1 {background-color: #0C1825;}
-.button2 {background-color: #0C1825;}  
-.button3 {background-color: #0C1825;}  
+.button4 {
+  font-family: Noto Sans KR;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #FAFFAE;
+  color: mediumspringgreen;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 2px;
+  cursor: pointer;
+  position: absolute;
+  right: 790px;
+}
+.button1 {background-color: #1A1B1F;}
+.button2 {background-color: #1A1B1F;}  
+.button3 {background-color: #1A1B1F;}
+.button4 {background-color: #1A1B1F;}
 
 </style>
 </head>
@@ -60,12 +87,57 @@ body {
 <body>
 	
 <button class="button button3">Works</button>
-<button class="button button1">Info</button>
-<button class="button button2">Contact</button>
-
-<div>
+<button onClick="window.location.href='portfolio_info.html';" class="button button1">Info</button>
+<button onClick="window.location.href='portfolio_contact.html';" class="button button2">Contact</button>
+<button onClick="window.location.href='portfolio_home.html';" class="button button4">Home</button>
+		
+<div style=
+"height:750px;
+ width:900px;
+ margin-top: 20px;
+ overflow:auto;
+ border-width: 4px;
+ border-style: solid;
+ border-color: #FAFFAE;
+ background-color: #1A1B1F;
+ color:white;
+ scrollbar-base-color:gold;
+ font-family: Noto Sans KR;
+ padding: 10px;
+ position: relative;
+ right: -480px">
 	
+<h1>Ardent Royal</h1>
+	
+<div id="gallery">
+	
+	<a href="img/ardentroyalguard.png" data-lightbox="photo" data-title="Ardent Royal Guard."><img src="img/thumb_royalguard.png" alt="royalguard"></a>
+		
+	<a href="img/foxtailEGO.png" data-lightbox="photo" data-title="Foxtail's EGO."><img src="img/thumb_foxtail.png" alt="foxtail"></a>
+		
+	<a href="img/greenordeal.png" data-lightbox="photo" data-title="Green Ordeal."><img src="img/thumb_ordeal.png" alt="greenordeal"></a>
+		
+	<a href="img/misakicarnet.png" data-lightbox="photo" data-title="Misaki Carnet."><img src="img/thumb_misakicarnet.png" alt="misakicarnet"></a>
+		
+	<a href="img/singingmachine.png" data-lightbox="photo" data-title="Singing Machine."><img src="img/thumb_singing.png" alt="singingmachine"></a>
+		
+	<a href="img/theheadwatches.png" data-lightbox="photo" data-title="The Head Watches."><img src="img/thumb_thehead.png" alt="headwatches"></a>
+	
+	<a href="img/hanagetsasoda.png" data-lightbox="photo" data-title="Hana gets a soda."><img src="img/thumb_hana.png" alt="hana"></a>
+	
+	<a href="img/beyondtheoutskirts.png" data-lightbox="photo" data-title="Beyond the Outskirts."><img src="img/thumb_outskirts.png" alt="outskirts"></a>
+	
+	<a href="img/ardentofficer.png" data-lightbox="photo" data-title="Ardent Royal Officer."><img src="img/thumb_royalofficer.png" alt="royalofficer"></a>
+	
+	<a href="img/isadoraofzwei.png" data-lightbox="photo" data-title="Isadora of Zwei."><img src="img/thumb_zwei.png" alt="zwei"></a>
+	
+	<a href="img/backstreetbutchers.png" data-lightbox="photo" data-title="Backstreet Butchers."><img src="img/thumb_butchers.png" alt="butchers"></a>
+	
+	<a href="img/roguehunter.png" data-lightbox="photo" data-title="Rogue Hunter."><img src="img/thumb_hunter.png" alt="hunter"></a>
+	
+	<a href="img/sweepers.png" data-lightbox="photo" data-title="Sweepers."><img src="img/thumb_sweepers.png" alt="sweepers"></a>
 
+<script src="js/lightbox-plus-jquery.js"></script>
 </div>	
 	
 </body>
