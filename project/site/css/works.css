@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#gallery {
+	width:260px;
+	background-color: lightgoldenrodyellow;
+	padding: 5px;
+	margin: 0 auto;
+	position: absolute;
+}
+
+#gallery img {
+	padding: 5px;
+}
+
+h1 {
+	
+}
